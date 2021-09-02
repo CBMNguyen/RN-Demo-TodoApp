@@ -28,6 +28,8 @@ export default function Task({navigation, route}) {
   }, []);
 
   const addTodoItem = async () => {
+    const date = JSON.stringify(new Date());
+
     if (title.length === 0 || !title.trim()) {
       Alert.alert('Warning', 'Please enter title 😡 !');
     } else {
@@ -39,7 +41,9 @@ export default function Task({navigation, route}) {
           title,
           description,
           isCompleted: route.params ? route.params.isCompleted : false,
-          color: route.params ? route.params.color : color,
+          color,
+          createdAt: route.params ? route.params.createdAt : date,
+          updatedAt: date,
         };
 
         let newTodo = [];

@@ -95,6 +95,7 @@ export default function Done({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
   },
 
   side_color: {
@@ -102,18 +103,6 @@ const styles = StyleSheet.create({
     height: '100%',
     borderTopLeftRadius: 10,
     borderBottomLeftRadius: 10,
-  },
-
-  input: {
-    width: '100%',
-    margin: 10,
-    paddingHorizontal: 10,
-    borderWidth: 1,
-    borderColor: '#555',
-
-    fontSize: 20,
-    borderRadius: 10,
-    backgroundColor: '#fff',
   },
 
   item_row: {
@@ -150,7 +139,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
     borderRadius: 8,
     backgroundColor: '#fff',
-    elevation: 2,
+    elevation: 5,
   },
 
   title: {
@@ -173,7 +162,7 @@ const styles = StyleSheet.create({
 
     width: 60,
     height: 60,
-    backgroundColor: '#0080ff',
+    backgroundColor: '#FF69B4',
     borderRadius: 30,
     elevation: 1,
   },
@@ -184,11 +173,11 @@ const styles = StyleSheet.create({
   },
 
   empty_text: {
-    fontSize: 45,
+    fontSize: 40,
     color: '#ccc',
   },
 
   empty_emoji: {
-    fontSize: 50,
+    fontSize: 40,
   },
 });

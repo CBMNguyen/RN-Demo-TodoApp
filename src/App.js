@@ -32,12 +32,13 @@ const HomeTab = () => (
         }
         return <FontAwesome5 name={iconName} size={size} color={color} />;
       },
-      tabBarActiveTintcolor: '#0080ff',
-      tabBarInactiveTintcolor: '#777',
       tabBarLabelStyle: {
         fontSize: 15,
         fontWeight: 'bold',
       },
+      tabBarStyle: {height: 55},
+      tabBarActiveBackgroundColor: '#FF69B4',
+      tabBarActiveTintColor: '#fff',
     })}>
     <Tab.Screen name={screenName.Todo} component={Todo} />
     <Tab.Screen name={screenName.Done} component={Done} />
@@ -52,7 +53,7 @@ function App(props) {
           initialRouteName={screenName.Splash}
           screenOptions={{
             headerStyle: {
-              backgroundColor: '#0080ff',
+              backgroundColor: '#FF69B4',
             },
             headerTintColor: '#fff',
             headerTitleAlign: 'center',

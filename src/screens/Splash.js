@@ -15,10 +15,9 @@ const Splash = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/images/logo.png')}
+        source={require('../assets/images/logo2.jpg')}
         style={styles.logoImage}
       />
-      <Text style={styles.title}>To-Do App</Text>
     </View>
   );
 };
@@ -33,10 +32,6 @@ const styles = StyleSheet.create({
   logoImage: {
     width: 200,
     height: 200,
-  },
-  title: {
-    fontSize: 40,
-    color: 'lightslategrey',
   },
 });
 
